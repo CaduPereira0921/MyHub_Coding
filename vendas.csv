@@ -1,61 +1,605 @@
-data,produto,regiao,quantidade,valor
-2026-05-01,Mouse,Sudeste,3,276.8
-2026-05-06,Notebook,Norte,1,3543.49
-2026-05-12,Headset,Nordeste,2,674.01
-2026-05-14,Notebook,Norte,1,3229.41
-2026-05-16,Monitor,Sul,3,3638.72
-2026-05-17,Notebook,Norte,3,11014.13
-2026-05-18,Monitor,Norte,1,1156.41
-2026-05-18,Notebook,Centro-Oeste,3,10547.84
-2026-05-19,Notebook,Centro-Oeste,5,16183.03
-2026-05-20,Headset,Nordeste,5,1664.28
-2026-05-22,Monitor,Sul,2,2169.92
-2026-05-26,Teclado,Sudeste,5,819.49
-2026-05-31,Mouse,Centro-Oeste,2,186.0
-2026-06-02,Headset,Sudeste,5,1694.87
-2026-06-05,Mouse,Sul,2,162.76
-2026-06-06,Notebook,Nordeste,3,10203.83
-2026-06-11,Headset,Sul,1,364.93
-2026-06-12,Teclado,Norte,2,353.24
-2026-06-16,Monitor,Norte,1,1134.04
-2026-06-16,Notebook,Norte,5,17427.15
-2026-06-16,Teclado,Sudeste,3,497.8
-2026-06-19,Monitor,Sul,4,4463.94
-2026-06-22,Mouse,Centro-Oeste,5,457.46
-2026-06-23,Headset,Sul,4,1393.23
-2026-06-23,Mouse,Sudeste,2,171.18
-2026-06-24,Teclado,Sul,5,913.1
-2026-06-28,Mouse,Nordeste,2,167.52
-2026-06-29,Monitor,Centro-Oeste,1,1229.6
-2026-07-22,Monitor,Sudeste,4,4372.15
-2026-07-23,Teclado,Centro-Oeste,5,922.62
-2026-07-27,Monitor,Centro-Oeste,4,4348.23
-2026-07-28,Headset,Centro-Oeste,3,964.35
-2026-07-29,Headset,Norte,4,1427.35
-2026-08-04,Notebook,Sudeste,5,17231.47
-2026-08-06,Monitor,Sudeste,2,2223.44
-2026-08-10,Mouse,Sudeste,4,332.98
-2026-08-11,Headset,Sul,3,1074.04
-2026-08-20,Teclado,Centro-Oeste,1,174.51
-2026-08-23,Teclado,Nordeste,4,650.44
-2026-08-23,Teclado,Sudeste,3,503.86
-2026-08-27,Teclado,Norte,2,330.32
-2026-08-28,Headset,Nordeste,4,1322.95
-2026-08-29,Teclado,Norte,2,375.65
-2026-08-30,Teclado,Norte,2,353.61
-2026-09-01,Mouse,Sul,1,81.91
-2026-09-02,Mouse,Centro-Oeste,4,340.84
-2026-09-04,Teclado,Nordeste,4,713.77
-2026-09-04,Teclado,Sudeste,1,183.33
-2026-09-06,Teclado,Norte,2,367.82
-2026-09-07,Monitor,Sudeste,1,1158.06
-2026-09-13,Teclado,Nordeste,1,176.0
-2026-09-13,Teclado,Norte,2,373.36
-2026-09-14,Teclado,Norte,5,853.01
-2026-09-15,Notebook,Norte,3,9541.35
-2026-09-16,Notebook,Nordeste,5,17220.68
-2026-09-18,Teclado,Nordeste,4,721.73
-2026-09-21,Mouse,Centro-Oeste,4,345.28
-2026-09-22,Notebook,Norte,2,7295.09
-2026-09-25,Headset,Sudeste,4,1465.01
-2026-09-29,Mouse,Norte,2,184.32
+data,produto,regiao,canal,quantidade,valor
+2026-01-01,Headset,Centro-Oeste,Marketplace,1,324.73
+2026-01-02,Mouse,Sudeste,Loja física,2,173.86
+2026-01-02,Monitor,Nordeste,Loja física,2,2140.26
+2026-01-02,Monitor,Nordeste,Marketplace,1,1259.5
+2026-01-03,Notebook,Sudeste,Marketplace,1,3376.04
+2026-01-03,Monitor,Sudeste,Marketplace,1,1222.77
+2026-01-03,Headset,Sul,Loja física,2,656.81
+2026-01-05,Mouse,Sudeste,Marketplace,1,91.14
+2026-01-05,Mouse,Sul,E-commerce,3,272.61
+2026-01-05,Notebook,Sudeste,Marketplace,2,7144.15
+2026-01-06,Monitor,Sudeste,E-commerce,5,5791.47
+2026-01-06,Monitor,Nordeste,Marketplace,3,3265.27
+2026-01-06,Notebook,Sul,E-commerce,1,3436.63
+2026-01-07,Teclado,Sudeste,Loja física,2,327.86
+2026-01-07,Webcam,Sudeste,Loja física,1,255.2
+2026-01-09,Mouse,Nordeste,Marketplace,1,89.66
+2026-01-10,Headset,Sul,Marketplace,5,1826.03
+2026-01-11,Headset,Sudeste,E-commerce,2,727.42
+2026-01-11,Headset,Sudeste,Loja física,1,352.11
+2026-01-11,Mouse,Sudeste,E-commerce,2,159.46
+2026-01-12,Teclado,Nordeste,Loja física,1,163.03
+2026-01-12,Notebook,Sul,Marketplace,2,7244.62
+2026-01-13,Mouse,Sul,E-commerce,4,353.6
+2026-01-13,Mouse,Sudeste,E-commerce,1,87.38
+2026-01-15,Teclado,Sul,E-commerce,5,795.6
+2026-01-15,Mouse,Sudeste,Marketplace,2,166.27
+2026-01-15,Webcam,Sudeste,Loja física,1,232.99
+2026-01-16,Mouse,Sudeste,Loja física,1,81.02
+2026-01-16,Webcam,Nordeste,Loja física,1,268.05
+2026-01-16,Mouse,Nordeste,E-commerce,1,90.59
+2026-01-19,Headset,Sudeste,E-commerce,1,353.45
+2026-01-19,Monitor,Sudeste,E-commerce,2,2239.96
+2026-01-19,Monitor,Sul,E-commerce,4,4464.74
+2026-01-22,Webcam,Sul,E-commerce,1,259.72
+2026-01-22,Notebook,Sudeste,Loja física,3,10983.67
+2026-01-23,Notebook,Nordeste,E-commerce,1,3123.63
+2026-01-23,Headset,Nordeste,E-commerce,2,618.35
+2026-01-23,Headset,Sudeste,Loja física,1,331.89
+2026-01-24,Notebook,Sudeste,E-commerce,1,3430.7
+2026-01-24,Mouse,Sudeste,Marketplace,1,84.21
+2026-01-24,Teclado,Sudeste,E-commerce,1,163.69
+2026-01-25,Mouse,Nordeste,Marketplace,2,181.61
+2026-01-26,Monitor,Sul,Marketplace,4,4538.94
+2026-01-26,Webcam,Sudeste,Loja física,5,1145.41
+2026-01-27,Teclado,Sul,E-commerce,1,163.76
+2026-01-27,Monitor,Norte,Loja física,3,3769.6
+2026-01-27,Headset,Sul,Loja física,2,660.27
+2026-01-30,Headset,Centro-Oeste,E-commerce,4,1462.19
+2026-01-30,Monitor,Sudeste,E-commerce,2,2404.21
+2026-01-31,Headset,Sudeste,E-commerce,2,649.39
+2026-01-31,Monitor,Sudeste,Marketplace,1,1252.0
+2026-01-31,Webcam,Sul,Loja física,3,688.92
+2026-02-01,Teclado,Sul,Loja física,1,158.63
+2026-02-01,Monitor,Sudeste,Loja física,2,2476.94
+2026-02-01,Mouse,Sudeste,Loja física,3,261.9
+2026-02-02,Mouse,Centro-Oeste,E-commerce,1,88.0
+2026-02-02,Headset,Sudeste,E-commerce,3,1041.58
+2026-02-02,Mouse,Sudeste,E-commerce,5,446.34
+2026-02-03,Headset,Sudeste,E-commerce,3,984.33
+2026-02-03,Monitor,Sudeste,Loja física,2,2475.18
+2026-02-03,Headset,Sudeste,Loja física,2,638.58
+2026-02-05,Monitor,Sudeste,Loja física,3,3412.48
+2026-02-05,Monitor,Sudeste,Marketplace,1,1096.59
+2026-02-05,Headset,Sul,E-commerce,1,321.03
+2026-02-06,Notebook,Centro-Oeste,E-commerce,1,3364.7
+2026-02-08,Teclado,Centro-Oeste,E-commerce,1,182.2
+2026-02-08,Webcam,Norte,Marketplace,5,1230.22
+2026-02-09,Notebook,Sul,E-commerce,1,3445.09
+2026-02-09,Teclado,Sul,Marketplace,1,186.88
+2026-02-10,Monitor,Sul,E-commerce,2,2228.67
+2026-02-11,Webcam,Sudeste,E-commerce,1,255.29
+2026-02-11,Mouse,Centro-Oeste,Marketplace,2,188.82
+2026-02-13,Mouse,Sudeste,Marketplace,1,87.35
+2026-02-14,Notebook,Nordeste,E-commerce,1,3332.43
+2026-02-14,Mouse,Sul,E-commerce,2,166.14
+2026-02-15,Headset,Sudeste,E-commerce,1,359.1
+2026-02-15,Monitor,Sudeste,Loja física,1,1117.59
+2026-02-15,Notebook,Nordeste,Marketplace,1,3099.49
+2026-02-16,Teclado,Sudeste,E-commerce,5,822.13
+2026-02-16,Mouse,Sudeste,Marketplace,2,160.08
+2026-02-17,Monitor,Sul,E-commerce,1,1170.77
+2026-02-17,Notebook,Nordeste,E-commerce,1,3142.22
+2026-02-17,Headset,Sul,Loja física,1,361.21
+2026-02-19,Monitor,Norte,Loja física,1,1209.35
+2026-02-19,Teclado,Sudeste,E-commerce,2,348.25
+2026-02-20,Monitor,Nordeste,E-commerce,2,2248.72
+2026-02-20,Monitor,Nordeste,E-commerce,1,1067.78
+2026-02-20,Notebook,Sudeste,E-commerce,4,13878.42
+2026-02-21,Headset,Sul,Loja física,2,681.31
+2026-02-21,Webcam,Sul,E-commerce,1,246.56
+2026-02-21,Teclado,Sudeste,Marketplace,2,343.67
+2026-02-22,Mouse,Nordeste,Loja física,3,279.01
+2026-02-22,Notebook,Nordeste,Loja física,1,3241.31
+2026-02-22,Webcam,Sudeste,Loja física,2,475.44
+2026-02-23,Monitor,Sudeste,E-commerce,1,1165.03
+2026-02-25,Teclado,Nordeste,Loja física,1,158.95
+2026-02-27,Monitor,Sul,E-commerce,2,2445.78
+2026-03-01,Monitor,Sudeste,E-commerce,1,1242.34
+2026-03-01,Notebook,Nordeste,E-commerce,2,7220.82
+2026-03-01,Monitor,Norte,E-commerce,4,4289.11
+2026-03-01,Teclado,Sudeste,E-commerce,2,326.84
+2026-03-02,Headset,Sudeste,Loja física,3,933.53
+2026-03-02,Monitor,Sudeste,Loja física,3,3629.11
+2026-03-02,Notebook,Sudeste,E-commerce,2,6686.67
+2026-03-03,Headset,Sudeste,Marketplace,1,365.85
+2026-03-03,Teclado,Sul,E-commerce,1,177.56
+2026-03-03,Mouse,Sudeste,Loja física,1,86.89
+2026-03-03,Notebook,Nordeste,Marketplace,5,15439.09
+2026-03-04,Monitor,Sudeste,E-commerce,1,1228.57
+2026-03-04,Mouse,Sudeste,E-commerce,1,84.84
+2026-03-04,Webcam,Nordeste,E-commerce,2,483.04
+2026-03-04,Mouse,Nordeste,Loja física,1,80.09
+2026-03-05,Mouse,Sudeste,E-commerce,3,270.72
+2026-03-05,Webcam,Nordeste,Loja física,1,272.31
+2026-03-05,Notebook,Sudeste,Loja física,1,3205.09
+2026-03-05,Teclado,Sudeste,Marketplace,2,329.75
+2026-03-06,Teclado,Sudeste,Loja física,1,162.36
+2026-03-06,Notebook,Nordeste,Loja física,1,3350.34
+2026-03-06,Teclado,Sudeste,E-commerce,1,174.02
+2026-03-06,Teclado,Nordeste,Loja física,1,170.39
+2026-03-07,Notebook,Centro-Oeste,E-commerce,1,3551.15
+2026-03-07,Webcam,Sudeste,E-commerce,4,962.08
+2026-03-07,Teclado,Sudeste,Loja física,2,329.34
+2026-03-08,Notebook,Sudeste,Loja física,1,3179.3
+2026-03-08,Notebook,Sul,E-commerce,3,9549.69
+2026-03-09,Mouse,Nordeste,Loja física,2,163.57
+2026-03-09,Webcam,Sudeste,E-commerce,1,239.97
+2026-03-10,Mouse,Sudeste,Loja física,3,248.8
+2026-03-10,Headset,Sudeste,Marketplace,4,1469.04
+2026-03-10,Webcam,Nordeste,Loja física,2,518.84
+2026-03-11,Webcam,Sudeste,E-commerce,4,1076.37
+2026-03-11,Headset,Sul,Loja física,4,1271.72
+2026-03-11,Mouse,Sudeste,Loja física,3,239.03
+2026-03-11,Teclado,Norte,Marketplace,2,320.63
+2026-03-12,Notebook,Centro-Oeste,E-commerce,1,3665.3
+2026-03-12,Headset,Nordeste,Marketplace,1,341.66
+2026-03-12,Monitor,Centro-Oeste,E-commerce,4,4340.06
+2026-03-12,Teclado,Nordeste,E-commerce,3,511.22
+2026-03-13,Webcam,Sul,E-commerce,2,536.14
+2026-03-14,Teclado,Nordeste,Loja física,2,364.01
+2026-03-14,Teclado,Nordeste,E-commerce,3,524.25
+2026-03-15,Monitor,Norte,Loja física,1,1166.32
+2026-03-15,Webcam,Sul,E-commerce,1,265.6
+2026-03-15,Monitor,Sul,Marketplace,2,2147.5
+2026-03-16,Mouse,Norte,Loja física,2,160.31
+2026-03-17,Headset,Nordeste,Loja física,2,731.45
+2026-03-18,Teclado,Sudeste,E-commerce,5,921.65
+2026-03-18,Monitor,Norte,E-commerce,1,1201.11
+2026-03-18,Mouse,Nordeste,E-commerce,2,166.38
+2026-03-18,Headset,Sudeste,E-commerce,1,351.59
+2026-03-19,Monitor,Sudeste,E-commerce,1,1143.28
+2026-03-19,Webcam,Sudeste,E-commerce,1,237.01
+2026-03-19,Monitor,Sul,E-commerce,3,3273.7
+2026-03-20,Notebook,Centro-Oeste,E-commerce,1,3480.6
+2026-03-21,Notebook,Sul,Loja física,1,3568.35
+2026-03-21,Notebook,Nordeste,E-commerce,1,3428.67
+2026-03-22,Mouse,Nordeste,E-commerce,1,81.01
+2026-03-22,Mouse,Sudeste,Marketplace,1,94.2
+2026-03-22,Mouse,Nordeste,Loja física,1,85.34
+2026-03-22,Mouse,Nordeste,Marketplace,4,320.09
+2026-03-23,Notebook,Centro-Oeste,E-commerce,2,6265.63
+2026-03-23,Headset,Sudeste,E-commerce,2,673.0
+2026-03-23,Notebook,Nordeste,E-commerce,1,3620.85
+2026-03-24,Monitor,Sul,Loja física,1,1173.13
+2026-03-24,Webcam,Centro-Oeste,Marketplace,3,744.04
+2026-03-24,Mouse,Centro-Oeste,Loja física,3,251.97
+2026-03-25,Teclado,Norte,Loja física,1,177.7
+2026-03-25,Notebook,Sudeste,Marketplace,2,6937.96
+2026-03-25,Headset,Sudeste,Marketplace,1,339.3
+2026-03-26,Headset,Nordeste,E-commerce,4,1279.85
+2026-03-26,Webcam,Centro-Oeste,E-commerce,2,500.99
+2026-03-27,Notebook,Nordeste,Marketplace,2,7286.88
+2026-03-27,Monitor,Nordeste,Loja física,3,3307.78
+2026-03-28,Notebook,Nordeste,E-commerce,2,6871.44
+2026-03-28,Webcam,Sul,Loja física,1,232.92
+2026-03-29,Teclado,Sul,E-commerce,3,497.64
+2026-03-30,Notebook,Sudeste,Loja física,5,17610.11
+2026-03-30,Mouse,Norte,E-commerce,1,86.62
+2026-03-30,Webcam,Sudeste,Marketplace,2,524.42
+2026-03-31,Monitor,Sudeste,Marketplace,1,1093.56
+2026-04-01,Teclado,Sudeste,E-commerce,3,522.17
+2026-04-02,Mouse,Nordeste,E-commerce,5,415.82
+2026-04-03,Headset,Sudeste,Marketplace,2,724.38
+2026-04-03,Mouse,Sudeste,Loja física,1,87.36
+2026-04-04,Teclado,Sul,Loja física,2,340.97
+2026-04-04,Notebook,Sudeste,Loja física,5,18196.12
+2026-04-04,Mouse,Sul,E-commerce,1,93.16
+2026-04-05,Monitor,Sudeste,Loja física,1,1154.53
+2026-04-06,Monitor,Sudeste,E-commerce,2,2226.21
+2026-04-06,Mouse,Centro-Oeste,Marketplace,2,185.12
+2026-04-08,Monitor,Centro-Oeste,Loja física,1,1166.59
+2026-04-08,Teclado,Nordeste,Loja física,1,175.26
+2026-04-10,Notebook,Sul,Marketplace,2,6699.45
+2026-04-10,Headset,Sudeste,Marketplace,1,346.41
+2026-04-10,Headset,Norte,Marketplace,1,336.65
+2026-04-11,Monitor,Centro-Oeste,Loja física,1,1081.41
+2026-04-11,Monitor,Sudeste,E-commerce,3,3281.95
+2026-04-11,Teclado,Centro-Oeste,E-commerce,1,188.48
+2026-04-12,Monitor,Sul,Loja física,2,2188.44
+2026-04-12,Teclado,Sudeste,E-commerce,4,643.32
+2026-04-12,Notebook,Sudeste,Marketplace,1,3416.99
+2026-04-13,Headset,Sudeste,E-commerce,1,319.79
+2026-04-13,Monitor,Sudeste,E-commerce,1,1122.08
+2026-04-13,Monitor,Nordeste,E-commerce,2,2182.77
+2026-04-14,Notebook,Nordeste,Loja física,3,9540.46
+2026-04-14,Monitor,Sudeste,E-commerce,2,2489.21
+2026-04-14,Headset,Sudeste,Loja física,2,625.19
+2026-04-15,Headset,Sul,E-commerce,1,336.72
+2026-04-15,Notebook,Sudeste,E-commerce,2,6162.34
+2026-04-15,Mouse,Nordeste,Marketplace,1,82.21
+2026-04-17,Notebook,Nordeste,Loja física,1,3315.8
+2026-04-17,Teclado,Nordeste,E-commerce,2,335.48
+2026-04-19,Monitor,Centro-Oeste,Loja física,2,2393.39
+2026-04-20,Headset,Sul,Loja física,2,724.29
+2026-04-20,Monitor,Sudeste,Marketplace,1,1142.6
+2026-04-22,Monitor,Centro-Oeste,E-commerce,5,5296.85
+2026-04-23,Mouse,Sudeste,E-commerce,1,85.99
+2026-04-24,Notebook,Nordeste,Marketplace,1,3352.88
+2026-04-26,Headset,Norte,E-commerce,2,633.15
+2026-04-26,Headset,Sudeste,Marketplace,1,330.2
+2026-04-28,Monitor,Sudeste,E-commerce,2,2307.64
+2026-04-30,Monitor,Sul,Loja física,4,4347.51
+2026-04-30,Mouse,Sudeste,E-commerce,3,249.93
+2026-05-01,Teclado,Norte,Loja física,4,730.92
+2026-05-01,Webcam,Sul,Marketplace,1,245.0
+2026-05-01,Webcam,Sudeste,Loja física,3,726.35
+2026-05-01,Teclado,Sudeste,Marketplace,3,481.23
+2026-05-02,Webcam,Sul,Loja física,4,1049.14
+2026-05-02,Headset,Centro-Oeste,Loja física,2,734.29
+2026-05-02,Webcam,Nordeste,E-commerce,3,686.9
+2026-05-03,Webcam,Sudeste,Marketplace,5,1173.1
+2026-05-03,Monitor,Norte,E-commerce,2,2303.08
+2026-05-03,Notebook,Nordeste,Loja física,1,3617.71
+2026-05-03,Webcam,Sul,Marketplace,1,260.95
+2026-05-04,Webcam,Sudeste,E-commerce,3,702.63
+2026-05-04,Notebook,Sul,Marketplace,1,3176.78
+2026-05-04,Teclado,Sul,Loja física,3,536.45
+2026-05-04,Notebook,Sul,Marketplace,1,3456.14
+2026-05-05,Teclado,Sudeste,Loja física,5,836.29
+2026-05-06,Teclado,Sudeste,E-commerce,3,524.76
+2026-05-06,Headset,Nordeste,Marketplace,1,343.86
+2026-05-07,Headset,Sudeste,Loja física,1,339.35
+2026-05-07,Notebook,Sudeste,Loja física,2,6716.16
+2026-05-07,Notebook,Norte,Loja física,1,3155.48
+2026-05-07,Teclado,Sudeste,Marketplace,2,352.76
+2026-05-08,Headset,Sudeste,Marketplace,1,362.62
+2026-05-08,Teclado,Sul,Loja física,2,349.42
+2026-05-08,Monitor,Sudeste,E-commerce,1,1101.16
+2026-05-08,Headset,Norte,Loja física,3,993.97
+2026-05-09,Mouse,Sudeste,E-commerce,3,244.73
+2026-05-09,Webcam,Centro-Oeste,Loja física,1,235.47
+2026-05-09,Headset,Sul,Loja física,4,1253.42
+2026-05-09,Headset,Norte,Loja física,1,318.16
+2026-05-10,Webcam,Sudeste,E-commerce,3,799.04
+2026-05-10,Headset,Sul,E-commerce,1,312.02
+2026-05-11,Mouse,Sudeste,Marketplace,2,172.44
+2026-05-11,Mouse,Centro-Oeste,Marketplace,5,441.11
+2026-05-11,Teclado,Sudeste,Marketplace,1,176.87
+2026-05-11,Teclado,Nordeste,Loja física,4,742.77
+2026-05-12,Headset,Sudeste,E-commerce,3,978.77
+2026-05-12,Headset,Sudeste,Marketplace,1,341.28
+2026-05-12,Teclado,Nordeste,E-commerce,2,339.68
+2026-05-13,Notebook,Centro-Oeste,Loja física,3,9280.14
+2026-05-13,Webcam,Centro-Oeste,Marketplace,2,511.17
+2026-05-14,Notebook,Sul,Loja física,1,3153.92
+2026-05-14,Webcam,Norte,E-commerce,1,238.58
+2026-05-14,Monitor,Sudeste,Loja física,3,3674.62
+2026-05-14,Teclado,Centro-Oeste,E-commerce,1,161.98
+2026-05-15,Notebook,Norte,E-commerce,2,7322.98
+2026-05-15,Monitor,Nordeste,E-commerce,1,1132.45
+2026-05-15,Notebook,Sudeste,Marketplace,2,7252.43
+2026-05-16,Notebook,Sudeste,E-commerce,1,3637.52
+2026-05-16,Mouse,Nordeste,E-commerce,1,85.17
+2026-05-16,Monitor,Nordeste,Marketplace,2,2517.86
+2026-05-17,Mouse,Sudeste,E-commerce,1,92.64
+2026-05-18,Headset,Nordeste,Loja física,4,1333.26
+2026-05-18,Headset,Sudeste,Marketplace,3,1007.56
+2026-05-18,Monitor,Centro-Oeste,Loja física,4,4480.7
+2026-05-18,Teclado,Sudeste,Marketplace,5,888.02
+2026-05-19,Mouse,Sul,Loja física,1,80.57
+2026-05-20,Teclado,Nordeste,E-commerce,4,719.72
+2026-05-21,Webcam,Norte,Marketplace,1,234.73
+2026-05-22,Webcam,Sul,Marketplace,5,1215.11
+2026-05-22,Teclado,Sul,Loja física,3,479.91
+2026-05-23,Monitor,Sudeste,Marketplace,2,2388.12
+2026-05-24,Mouse,Sudeste,E-commerce,3,249.17
+2026-05-24,Mouse,Centro-Oeste,Loja física,3,279.88
+2026-05-24,Notebook,Sudeste,Marketplace,1,3669.27
+2026-05-24,Monitor,Sudeste,E-commerce,1,1136.53
+2026-05-25,Teclado,Sudeste,E-commerce,1,176.69
+2026-05-25,Webcam,Sul,E-commerce,3,814.71
+2026-05-25,Monitor,Sul,Loja física,1,1202.89
+2026-05-25,Monitor,Nordeste,Loja física,3,3712.32
+2026-05-26,Monitor,Sul,E-commerce,3,3622.1
+2026-05-26,Notebook,Sul,Loja física,4,14384.15
+2026-05-27,Headset,Sudeste,Marketplace,1,360.1
+2026-05-27,Mouse,Sudeste,Marketplace,2,161.51
+2026-05-28,Monitor,Centro-Oeste,E-commerce,2,2230.18
+2026-05-28,Notebook,Sudeste,Marketplace,1,3621.11
+2026-05-28,Mouse,Nordeste,E-commerce,4,327.53
+2026-05-29,Teclado,Sudeste,Marketplace,4,699.2
+2026-05-30,Headset,Sudeste,Marketplace,5,1836.17
+2026-05-30,Headset,Sul,E-commerce,1,333.62
+2026-05-31,Monitor,Sul,Loja física,3,3627.14
+2026-06-01,Mouse,Sudeste,Loja física,2,160.25
+2026-06-01,Webcam,Nordeste,E-commerce,3,806.58
+2026-06-01,Teclado,Sudeste,Loja física,1,163.3
+2026-06-02,Teclado,Norte,E-commerce,2,324.95
+2026-06-02,Mouse,Nordeste,Marketplace,2,181.45
+2026-06-02,Headset,Sudeste,Loja física,2,655.85
+2026-06-03,Monitor,Sudeste,Loja física,2,2315.16
+2026-06-03,Mouse,Sudeste,E-commerce,5,449.68
+2026-06-04,Headset,Sul,E-commerce,2,718.59
+2026-06-05,Notebook,Sudeste,Loja física,1,3566.76
+2026-06-05,Webcam,Sudeste,Loja física,1,258.94
+2026-06-06,Headset,Sudeste,E-commerce,2,648.21
+2026-06-06,Mouse,Sul,Loja física,1,82.0
+2026-06-06,Monitor,Nordeste,E-commerce,1,1151.41
+2026-06-07,Webcam,Norte,E-commerce,3,813.3
+2026-06-08,Webcam,Sul,Loja física,2,466.33
+2026-06-08,Monitor,Sudeste,E-commerce,1,1233.93
+2026-06-09,Headset,Sul,Marketplace,2,704.37
+2026-06-10,Headset,Sudeste,Loja física,1,337.99
+2026-06-10,Teclado,Sudeste,Loja física,1,159.08
+2026-06-10,Notebook,Nordeste,Marketplace,1,3445.16
+2026-06-11,Monitor,Sudeste,Loja física,2,2221.86
+2026-06-11,Notebook,Sudeste,Marketplace,1,3666.67
+2026-06-11,Teclado,Nordeste,Loja física,3,485.41
+2026-06-11,Headset,Sudeste,Loja física,2,723.32
+2026-06-12,Teclado,Nordeste,E-commerce,1,169.74
+2026-06-13,Teclado,Sudeste,Loja física,4,646.32
+2026-06-13,Headset,Nordeste,Marketplace,1,337.95
+2026-06-13,Webcam,Sul,Loja física,1,265.41
+2026-06-14,Monitor,Sudeste,Loja física,1,1251.67
+2026-06-14,Notebook,Sudeste,E-commerce,4,14442.16
+2026-06-14,Monitor,Sudeste,Loja física,1,1208.11
+2026-06-15,Headset,Centro-Oeste,Loja física,5,1757.13
+2026-06-15,Mouse,Centro-Oeste,Loja física,2,182.37
+2026-06-15,Headset,Norte,Marketplace,1,350.1
+2026-06-15,Mouse,Norte,Loja física,1,81.32
+2026-06-16,Teclado,Norte,E-commerce,2,376.8
+2026-06-17,Notebook,Nordeste,Marketplace,2,7310.93
+2026-06-18,Notebook,Sudeste,E-commerce,1,3616.83
+2026-06-18,Notebook,Sudeste,E-commerce,3,10071.64
+2026-06-19,Notebook,Sul,Loja física,1,3166.54
+2026-06-19,Teclado,Nordeste,E-commerce,1,159.7
+2026-06-19,Mouse,Sudeste,Marketplace,2,170.08
+2026-06-19,Teclado,Nordeste,Marketplace,1,160.91
+2026-06-20,Webcam,Sul,Loja física,1,236.95
+2026-06-20,Headset,Nordeste,Loja física,3,970.55
+2026-06-20,Mouse,Sudeste,E-commerce,1,81.02
+2026-06-20,Notebook,Centro-Oeste,E-commerce,2,6657.16
+2026-06-21,Mouse,Sul,E-commerce,1,91.12
+2026-06-21,Headset,Sul,E-commerce,1,339.1
+2026-06-21,Webcam,Sul,Loja física,1,269.07
+2026-06-22,Monitor,Nordeste,Marketplace,2,2307.68
+2026-06-22,Notebook,Sudeste,Loja física,4,14551.03
+2026-06-22,Headset,Sul,Loja física,1,315.42
+2026-06-23,Webcam,Centro-Oeste,Loja física,2,500.62
+2026-06-23,Teclado,Nordeste,E-commerce,4,748.55
+2026-06-24,Headset,Sul,E-commerce,2,660.72
+2026-06-24,Headset,Nordeste,Marketplace,4,1317.78
+2026-06-24,Monitor,Sudeste,E-commerce,1,1106.81
+2026-06-24,Headset,Nordeste,E-commerce,2,708.86
+2026-06-25,Mouse,Sudeste,E-commerce,1,94.11
+2026-06-26,Notebook,Sudeste,Loja física,1,3493.06
+2026-06-26,Headset,Sudeste,Loja física,1,324.09
+2026-06-27,Mouse,Sul,E-commerce,1,93.31
+2026-06-27,Notebook,Nordeste,Marketplace,1,3208.99
+2026-06-27,Teclado,Sudeste,Marketplace,1,183.87
+2026-06-27,Notebook,Norte,E-commerce,5,17645.33
+2026-06-28,Headset,Sul,Marketplace,3,1020.0
+2026-06-28,Webcam,Norte,Loja física,1,240.19
+2026-06-29,Headset,Sudeste,Marketplace,2,633.86
+2026-06-29,Monitor,Norte,Loja física,1,1239.83
+2026-06-29,Mouse,Norte,Marketplace,2,173.36
+2026-06-30,Teclado,Sudeste,Loja física,4,646.51
+2026-06-30,Teclado,Sudeste,E-commerce,2,336.4
+2026-06-30,Monitor,Sudeste,Loja física,2,2366.08
+2026-07-01,Mouse,Nordeste,E-commerce,1,93.16
+2026-07-01,Teclado,Sudeste,E-commerce,3,500.98
+2026-07-02,Notebook,Sul,Loja física,5,17342.95
+2026-07-03,Monitor,Norte,E-commerce,1,1151.71
+2026-07-03,Notebook,Sul,Loja física,4,13909.11
+2026-07-03,Mouse,Centro-Oeste,Loja física,1,85.8
+2026-07-04,Monitor,Norte,Loja física,1,1213.32
+2026-07-04,Mouse,Nordeste,Marketplace,2,178.62
+2026-07-04,Teclado,Sul,Loja física,1,180.15
+2026-07-05,Mouse,Centro-Oeste,Loja física,3,250.07
+2026-07-05,Notebook,Sudeste,Loja física,1,3227.33
+2026-07-05,Mouse,Sudeste,E-commerce,1,92.5
+2026-07-06,Notebook,Sudeste,Loja física,2,7311.75
+2026-07-06,Monitor,Sul,Loja física,1,1144.0
+2026-07-06,Headset,Sudeste,Marketplace,4,1315.06
+2026-07-06,Teclado,Norte,Loja física,3,559.3
+2026-07-07,Headset,Sudeste,Marketplace,5,1555.83
+2026-07-08,Teclado,Sudeste,E-commerce,1,164.01
+2026-07-09,Notebook,Centro-Oeste,E-commerce,2,7203.28
+2026-07-09,Headset,Nordeste,E-commerce,4,1449.53
+2026-07-09,Notebook,Sudeste,Loja física,1,3631.92
+2026-07-09,Mouse,Sudeste,E-commerce,2,174.78
+2026-07-10,Teclado,Sul,E-commerce,3,558.94
+2026-07-10,Teclado,Nordeste,Loja física,3,509.39
+2026-07-10,Notebook,Sudeste,Loja física,1,3186.32
+2026-07-11,Teclado,Sudeste,Marketplace,1,163.89
+2026-07-11,Mouse,Centro-Oeste,E-commerce,2,170.18
+2026-07-12,Teclado,Nordeste,Marketplace,3,487.62
+2026-07-12,Teclado,Norte,E-commerce,4,701.28
+2026-07-12,Notebook,Nordeste,Marketplace,2,6995.96
+2026-07-13,Teclado,Norte,E-commerce,2,317.43
+2026-07-14,Mouse,Sul,Loja física,2,158.63
+2026-07-15,Mouse,Sul,Marketplace,2,183.08
+2026-07-16,Webcam,Sudeste,Loja física,1,253.47
+2026-07-16,Notebook,Norte,Marketplace,2,6827.27
+2026-07-16,Notebook,Sudeste,E-commerce,2,6914.1
+2026-07-16,Mouse,Sudeste,E-commerce,3,263.08
+2026-07-17,Teclado,Norte,Loja física,2,351.63
+2026-07-17,Teclado,Sudeste,E-commerce,1,172.42
+2026-07-17,Monitor,Sudeste,Loja física,1,1230.63
+2026-07-17,Webcam,Sudeste,E-commerce,2,475.39
+2026-07-18,Webcam,Nordeste,E-commerce,3,697.57
+2026-07-18,Headset,Sul,E-commerce,1,308.81
+2026-07-18,Monitor,Centro-Oeste,Marketplace,5,5349.62
+2026-07-18,Notebook,Sul,E-commerce,3,10337.39
+2026-07-19,Mouse,Sudeste,E-commerce,2,172.45
+2026-07-19,Mouse,Sul,Marketplace,2,176.72
+2026-07-19,Mouse,Nordeste,Loja física,2,178.65
+2026-07-19,Teclado,Sudeste,Marketplace,1,181.78
+2026-07-20,Headset,Sudeste,Loja física,2,685.45
+2026-07-21,Headset,Sudeste,E-commerce,3,982.01
+2026-07-21,Teclado,Nordeste,Loja física,1,176.54
+2026-07-21,Webcam,Sudeste,E-commerce,2,515.43
+2026-07-21,Teclado,Nordeste,Marketplace,2,370.65
+2026-07-22,Notebook,Sudeste,Loja física,1,3546.31
+2026-07-23,Teclado,Sudeste,Loja física,4,747.04
+2026-07-23,Webcam,Nordeste,E-commerce,2,460.55
+2026-07-23,Monitor,Sudeste,Marketplace,2,2305.59
+2026-07-24,Notebook,Sul,E-commerce,2,7212.86
+2026-07-25,Headset,Sul,E-commerce,3,1096.8
+2026-07-25,Monitor,Sul,Loja física,1,1120.65
+2026-07-26,Monitor,Sudeste,E-commerce,2,2170.29
+2026-07-26,Monitor,Sudeste,E-commerce,2,2181.58
+2026-07-26,Teclado,Norte,E-commerce,5,847.28
+2026-07-27,Teclado,Centro-Oeste,E-commerce,3,565.32
+2026-07-27,Notebook,Sudeste,Loja física,2,6736.18
+2026-07-27,Monitor,Norte,Marketplace,1,1234.67
+2026-07-27,Monitor,Sudeste,E-commerce,4,4534.87
+2026-07-28,Teclado,Nordeste,Loja física,1,174.94
+2026-07-29,Teclado,Nordeste,Loja física,2,338.14
+2026-07-30,Monitor,Sudeste,Loja física,2,2213.91
+2026-07-30,Monitor,Sudeste,E-commerce,3,3744.17
+2026-07-31,Headset,Sul,E-commerce,3,1102.11
+2026-07-31,Mouse,Nordeste,Marketplace,2,166.19
+2026-07-31,Monitor,Sudeste,E-commerce,4,4273.53
+2026-07-31,Webcam,Sudeste,E-commerce,2,488.12
+2026-08-01,Teclado,Nordeste,Marketplace,4,648.73
+2026-08-01,Teclado,Centro-Oeste,Loja física,3,549.13
+2026-08-02,Monitor,Sudeste,E-commerce,1,1174.7
+2026-08-02,Teclado,Sudeste,Loja física,1,168.52
+2026-08-02,Monitor,Sul,Marketplace,1,1227.63
+2026-08-02,Notebook,Nordeste,Marketplace,4,14468.82
+2026-08-03,Monitor,Nordeste,Loja física,2,2387.8
+2026-08-04,Headset,Nordeste,E-commerce,4,1280.65
+2026-08-04,Mouse,Sudeste,E-commerce,4,337.56
+2026-08-04,Teclado,Sudeste,E-commerce,2,369.69
+2026-08-04,Teclado,Sudeste,E-commerce,2,371.73
+2026-08-05,Webcam,Sudeste,Loja física,1,236.17
+2026-08-06,Teclado,Sul,E-commerce,1,182.29
+2026-08-06,Teclado,Nordeste,E-commerce,1,162.68
+2026-08-07,Headset,Norte,Loja física,1,315.68
+2026-08-08,Monitor,Nordeste,Loja física,3,3463.97
+2026-08-08,Headset,Sul,Loja física,4,1334.26
+2026-08-08,Headset,Nordeste,E-commerce,2,725.49
+2026-08-08,Teclado,Sul,Marketplace,1,181.8
+2026-08-09,Teclado,Sudeste,Marketplace,5,829.34
+2026-08-09,Monitor,Sudeste,E-commerce,1,1194.47
+2026-08-10,Teclado,Sul,Loja física,1,173.23
+2026-08-10,Teclado,Sul,Loja física,2,322.27
+2026-08-10,Headset,Nordeste,Loja física,3,997.46
+2026-08-11,Monitor,Sudeste,Loja física,3,3714.53
+2026-08-11,Teclado,Sul,Loja física,3,499.61
+2026-08-11,Headset,Nordeste,Marketplace,3,1026.95
+2026-08-12,Teclado,Norte,E-commerce,1,169.71
+2026-08-13,Teclado,Sudeste,E-commerce,3,547.43
+2026-08-14,Monitor,Sudeste,E-commerce,3,3169.31
+2026-08-14,Monitor,Sudeste,Marketplace,5,5284.68
+2026-08-14,Headset,Nordeste,E-commerce,4,1431.08
+2026-08-14,Headset,Sudeste,Loja física,3,979.97
+2026-08-15,Teclado,Centro-Oeste,Marketplace,1,175.48
+2026-08-16,Mouse,Sudeste,Loja física,1,84.69
+2026-08-17,Teclado,Nordeste,E-commerce,1,184.77
+2026-08-18,Teclado,Nordeste,Marketplace,2,338.76
+2026-08-18,Notebook,Sul,E-commerce,2,7026.23
+2026-08-18,Notebook,Sudeste,Loja física,2,6703.43
+2026-08-19,Headset,Nordeste,Loja física,5,1688.76
+2026-08-19,Mouse,Sul,E-commerce,1,82.56
+2026-08-19,Mouse,Nordeste,E-commerce,3,279.69
+2026-08-20,Mouse,Sudeste,E-commerce,3,282.63
+2026-08-20,Teclado,Nordeste,E-commerce,2,349.9
+2026-08-21,Notebook,Sudeste,E-commerce,1,3157.8
+2026-08-21,Notebook,Centro-Oeste,E-commerce,2,6528.5
+2026-08-21,Mouse,Nordeste,Loja física,2,166.26
+2026-08-22,Monitor,Sul,Loja física,1,1083.95
+2026-08-22,Teclado,Sul,E-commerce,1,178.35
+2026-08-22,Headset,Nordeste,Loja física,1,315.44
+2026-08-23,Headset,Centro-Oeste,Marketplace,5,1777.22
+2026-08-23,Mouse,Centro-Oeste,Marketplace,1,91.49
+2026-08-23,Monitor,Sudeste,E-commerce,4,4609.81
+2026-08-24,Headset,Sudeste,E-commerce,4,1342.99
+2026-08-24,Mouse,Sudeste,E-commerce,4,350.79
+2026-08-25,Monitor,Sudeste,Marketplace,1,1234.45
+2026-08-25,Teclado,Norte,Loja física,1,186.04
+2026-08-25,Teclado,Sudeste,E-commerce,1,185.76
+2026-08-25,Mouse,Sudeste,Marketplace,2,185.42
+2026-08-26,Notebook,Sudeste,E-commerce,4,12781.87
+2026-08-27,Monitor,Sudeste,Loja física,4,4796.32
+2026-08-27,Notebook,Sudeste,Marketplace,1,3118.82
+2026-08-28,Monitor,Sudeste,Marketplace,1,1133.21
+2026-08-28,Mouse,Sudeste,E-commerce,1,87.31
+2026-08-28,Monitor,Centro-Oeste,E-commerce,3,3465.6
+2026-08-29,Monitor,Sudeste,Marketplace,1,1064.05
+2026-08-30,Monitor,Sudeste,E-commerce,2,2328.96
+2026-08-30,Monitor,Sudeste,E-commerce,1,1102.22
+2026-08-30,Notebook,Centro-Oeste,Loja física,2,6848.9
+2026-08-30,Mouse,Nordeste,E-commerce,1,81.13
+2026-08-31,Teclado,Centro-Oeste,Loja física,2,318.64
+2026-08-31,Teclado,Centro-Oeste,E-commerce,1,175.16
+2026-08-31,Mouse,Sudeste,Marketplace,1,90.02
+2026-09-01,Monitor,Sudeste,E-commerce,1,1256.27
+2026-09-01,Headset,Centro-Oeste,E-commerce,1,315.45
+2026-09-01,Mouse,Sudeste,Marketplace,1,91.51
+2026-09-02,Webcam,Centro-Oeste,E-commerce,1,268.86
+2026-09-02,Notebook,Sudeste,Loja física,1,3632.12
+2026-09-02,Monitor,Sul,Marketplace,1,1256.47
+2026-09-03,Teclado,Sul,E-commerce,2,333.53
+2026-09-04,Mouse,Sudeste,E-commerce,2,172.04
+2026-09-04,Monitor,Nordeste,E-commerce,1,1089.32
+2026-09-04,Teclado,Sudeste,E-commerce,1,177.33
+2026-09-04,Mouse,Nordeste,E-commerce,2,174.41
+2026-09-05,Monitor,Sudeste,Loja física,1,1165.93
+2026-09-05,Notebook,Centro-Oeste,Loja física,3,9430.28
+2026-09-05,Headset,Sudeste,E-commerce,2,658.22
+2026-09-05,Monitor,Nordeste,E-commerce,3,3486.65
+2026-09-06,Headset,Sudeste,E-commerce,3,975.67
+2026-09-06,Monitor,Sudeste,E-commerce,1,1203.66
+2026-09-06,Monitor,Nordeste,E-commerce,1,1129.6
+2026-09-07,Notebook,Sul,Loja física,1,3218.7
+2026-09-08,Headset,Nordeste,E-commerce,1,337.69
+2026-09-08,Headset,Sul,Marketplace,3,1044.12
+2026-09-09,Notebook,Sudeste,Marketplace,4,12537.36
+2026-09-09,Teclado,Sudeste,Marketplace,1,163.72
+2026-09-10,Mouse,Sudeste,Loja física,1,85.54
+2026-09-10,Teclado,Centro-Oeste,E-commerce,3,563.32
+2026-09-10,Notebook,Sudeste,Loja física,2,6739.73
+2026-09-11,Webcam,Nordeste,Loja física,2,475.75
+2026-09-11,Mouse,Centro-Oeste,Marketplace,2,165.73
+2026-09-12,Teclado,Nordeste,E-commerce,3,541.38
+2026-09-12,Headset,Sudeste,Loja física,1,357.37
+2026-09-12,Teclado,Nordeste,Marketplace,1,167.66
+2026-09-13,Headset,Nordeste,E-commerce,5,1552.14
+2026-09-13,Monitor,Nordeste,Marketplace,1,1237.52
+2026-09-13,Headset,Sudeste,E-commerce,1,335.85
+2026-09-14,Mouse,Sudeste,Loja física,3,238.79
+2026-09-14,Monitor,Centro-Oeste,E-commerce,3,3676.3
+2026-09-14,Teclado,Norte,Loja física,2,333.28
+2026-09-14,Webcam,Sul,Loja física,1,263.28
+2026-09-15,Monitor,Sul,Marketplace,1,1239.84
+2026-09-16,Headset,Centro-Oeste,Loja física,1,333.5
+2026-09-17,Webcam,Norte,Loja física,1,253.8
+2026-09-17,Headset,Sudeste,Marketplace,2,705.33
+2026-09-17,Teclado,Sudeste,Loja física,3,506.17
+2026-09-17,Webcam,Sudeste,Marketplace,1,242.73
+2026-09-18,Teclado,Sudeste,Loja física,1,162.19
+2026-09-18,Monitor,Sudeste,Loja física,3,3401.43
+2026-09-18,Mouse,Sudeste,E-commerce,4,359.63
+2026-09-19,Webcam,Nordeste,E-commerce,1,240.77
+2026-09-20,Mouse,Sul,E-commerce,4,364.64
+2026-09-20,Teclado,Centro-Oeste,E-commerce,2,363.95
+2026-09-20,Mouse,Sul,Marketplace,2,184.3
+2026-09-21,Mouse,Nordeste,Marketplace,4,336.45
+2026-09-21,Teclado,Centro-Oeste,E-commerce,1,178.31
+2026-09-22,Teclado,Sudeste,Loja física,1,160.27
+2026-09-23,Monitor,Norte,Loja física,4,4235.0
+2026-09-24,Mouse,Sul,Loja física,5,406.28
+2026-09-24,Mouse,Sul,E-commerce,4,346.4
+2026-09-25,Teclado,Sudeste,Loja física,1,173.68
+2026-09-25,Webcam,Sul,Marketplace,5,1217.7
+2026-09-25,Mouse,Sudeste,Loja física,1,90.03
+2026-09-25,Webcam,Centro-Oeste,E-commerce,1,271.35
+2026-09-26,Headset,Sudeste,E-commerce,2,634.77
+2026-09-26,Notebook,Sudeste,E-commerce,1,3369.28
+2026-09-26,Mouse,Norte,E-commerce,2,174.89
+2026-09-26,Headset,Sudeste,Loja física,3,930.34
+2026-09-27,Notebook,Sul,Marketplace,3,10607.22
+2026-09-28,Headset,Sudeste,Loja física,1,324.94
+2026-09-28,Headset,Sul,Marketplace,2,693.07
+2026-09-28,Headset,Nordeste,Loja física,1,358.1
+2026-09-28,Notebook,Sul,Loja física,2,7166.67
+2026-09-29,Headset,Nordeste,Loja física,1,339.71
+2026-09-29,Teclado,Sudeste,E-commerce,3,499.4
+2026-09-29,Notebook,Sul,E-commerce,4,14063.86
+2026-09-30,Teclado,Sudeste,Marketplace,1,166.31
+2026-09-30,Webcam,Nordeste,Marketplace,1,256.62
+2026-09-30,Teclado,Sudeste,Marketplace,1,181.1
